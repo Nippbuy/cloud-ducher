@@ -1,0 +1,116 @@
+{
+  "version": 2,
+  "macros": [
+    {
+      "umid": "64202d12-a0dc-4f1b-911b-b38370e578cd",
+      "keyCode": 88,
+      "repeat": false,
+      "command": {
+        "command": "/home home",
+        "type": "string"
+      },
+      "active": true
+    },
+    {
+      "umid": "7b58a6cc-4f77-4f7e-b87e-09e0625b15a2",
+      "keyCode": 327,
+      "repeat": false,
+      "command": {
+        "command": "/home kris7",
+        "type": "string"
+      },
+      "active": true
+    },
+    {
+      "umid": "b83a168b-42f2-4070-908b-32f175cbec15",
+      "keyCode": 323,
+      "repeat": false,
+      "command": {
+        "command": "/home kris3",
+        "type": "string"
+      },
+      "active": true
+    },
+    {
+      "umid": "58f825c3-cab6-42b3-a72e-07bb723b9af7",
+      "keyCode": 321,
+      "repeat": false,
+      "command": {
+        "command": "/home kris",
+        "type": "string"
+      },
+      "active": true
+    },
+    {
+      "umid": "aeaf0a93-9e47-4162-9745-adccc9093754",
+      "keyCode": 326,
+      "repeat": false,
+      "command": {
+        "command": "/home kris6",
+        "type": "string"
+      },
+      "active": true
+    },
+    {
+      "umid": "8c1d1107-f0d2-4472-ae1f-4395126ffe79",
+      "keyCode": 322,
+      "repeat": false,
+      "command": {
+        "command": "/home kris2",
+        "type": "string"
+      },
+      "active": true
+    },
+    {
+      "umid": "d9a5681a-56e9-45d2-a3e7-9b632f6b5216",
+      "keyCode": 325,
+      "repeat": false,
+      "command": {
+        "command": "/home kris5",
+        "type": "string"
+      },
+      "active": true
+    },
+    {
+      "umid": "e61ae7a4-74e2-43eb-920e-2481fc042c3a",
+      "keyCode": 324,
+      "repeat": false,
+      "command": {
+        "command": "/home kris4",
+        "type": "string"
+      },
+      "active": true
+    },
+    {
+      "umid": "00f3f756-6005-463f-ba48-361b36d1f403",
+      "keyCode": 86,
+      "repeat": false,
+      "command": {
+        "command": "/home shaxta",
+        "type": "string"
+      },
+      "active": true
+    },
+    {
+      "umid": "f279ee03-677f-43c6-9f8f-38b60274a5c8",
+      "keyCode": 77,
+      "repeat": false,
+      "command": {
+        "command": "/call edik__",
+        "type": "string"
+      },
+      "active": true
+    },
+    {
+      "umid": "07414623-2584-401c-bdb5-24231c29d411",
+      "keyCode": 78,
+      "repeat": false,
+      "command": {
+        "command": "/near",
+        "type": "string"
+      },
+      "active": true
+    }
+  ],
+  "layers": []
+}
