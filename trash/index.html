@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>Index of /trash</title>
+  <link rel="stylesheet" href="../lib/css/table-darkmode.css" type="text/css">
+  <link rel="stylesheet" href="../lib/css/common.css" type="text/css">
+  <link rel="stylesheet" href="../lib/css/darkmode.css" type="text/css">
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1'><meta http-equiv='X-UA-Compatible' content='IE=edge'> </head>
+ <body>
+  <main>
+    <!--
+      Add any static information or notices here
+    -->
+
+    <h1 class="title">Cloud: <span class="js-path"></span></h1>  <table id="indexlist">
+   <tr class="indexhead"><th class="indexcolicon"><img src="../lib/svg/blank.svg" alt="[ICO]" /></th><th class="indexcolname"><a href="?C=N;O=D">Name</a></th><th class="indexcollastmod"><a href="?C=M;O=A">Last modified</a></th><th class="indexcolsize"><a href="?C=S;O=A">Size</a></th></tr>
+   <tr class="even"><td class="indexcolicon"><a href="/"><img src="../lib/svg/folder-home.svg" alt="[PARENTDIR]" /></a></td><td class="indexcolname"><a href="/">Parent Directory</a></td><td class="indexcollastmod">&nbsp;</td><td class="indexcolsize">  - </td></tr>
+   <tr class="odd"><td class="indexcolicon"><a href="easydonate/"><img src="../lib/svg/folder.svg" alt="[DIR]" /></a></td><td class="indexcolname"><a href="easydonate/">easydonate/</a></td><td class="indexcollastmod">2021-11-11 22:22  </td><td class="indexcolsize">  - </td></tr>
+   <tr class="even"><td class="indexcolicon"><a href="owlsstudio/"><img src="../lib/svg/folder.svg" alt="[DIR]" /></a></td><td class="indexcolname"><a href="owlsstudio/">owlsstudio/</a></td><td class="indexcollastmod">2021-10-27 18:42  </td><td class="indexcolsize">  - </td></tr>
+   <tr class="odd"><td class="indexcolicon"><a href="plugins/"><img src="../lib/svg/folder.svg" alt="[DIR]" /></a></td><td class="indexcolname"><a href="plugins/">plugins/</a></td><td class="indexcollastmod">2022-01-02 03:43  </td><td class="indexcolsize">  - </td></tr>
+   <tr class="even"><td class="indexcolicon"><a href="scripts/"><img src="../lib/svg/folder.svg" alt="[DIR]" /></a></td><td class="indexcolname"><a href="scripts/">scripts/</a></td><td class="indexcollastmod">2021-11-12 18:24  </td><td class="indexcolsize">  - </td></tr>
+   <tr class="odd"><td class="indexcolicon"><a href="videos/"><img src="../lib/svg/folder.svg" alt="[DIR]" /></a></td><td class="indexcolname"><a href="videos/">videos/</a></td><td class="indexcollastmod">2021-10-11 21:33  </td><td class="indexcolsize">  - </td></tr>
+   <tr class="even"><td class="indexcolicon"><a href="viruses/"><img src="../lib/svg/folder.svg" alt="[DIR]" /></a></td><td class="indexcolname"><a href="viruses/">viruses/</a></td><td class="indexcollastmod">2021-12-12 01:07  </td><td class="indexcolsize">  - </td></tr>
+</table>
+  </main>
+
+  <footer>
+    <!--
+      Add any other listing related copyright content here
+    -->
+
+<em>© 2021 Ducher|Nippbuy</em>
+  </footer>
+  
+  <script>
+    function joinUntil(array, index, separator) {
+      var result = [];
+
+      for (var i = 0; i <= index; i++) {
+        result.push(array[i]);
+      }
+
+      return result.join(separator);
+    }
+
+    // Make all the icon links unfocusable with tab
+    var iconLinks = document.querySelectorAll('.indexcolicon a');
+    Array.prototype.forEach.call(iconLinks, function(link) {
+      link.setAttribute('tabindex', '-1');
+    });
+
+    var path = document.querySelector('.js-path');
+    var pathParts = location.pathname.split('/');
+
+    // Removing empty strings
+    for (var i = 0; i < pathParts.length;) {
+      if (pathParts[i]) {
+        i++;
+      } else {
+        pathParts.splice(i, 1);
+      }
+    }
+
+    var pathContents = ['<a href="/">/</a>'];
+    Array.prototype.forEach.call(pathParts, function(part, index) {
+      pathContents.push('<a href="/' + joinUntil(pathParts, index, '/') + '">' + decodeURI(part) + '</a>');
+    });
+
+    path.innerHTML = pathContents.join('&rsaquo;');
+  </script>
+</body></html>

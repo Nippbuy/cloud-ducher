@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0024)http://cloud.foammy.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Index of /</title>
+  <link rel="stylesheet" href="lib/css/table-darkmode.css" type="text/css">
+  <link rel="stylesheet" href="lib/css/common.css" type="text/css">
+  <link rel="stylesheet" href="lib/css/darkmode.css" type="text/css">
+ <body>
+  <main>
+    <!--
+      Add any static information or notices here
+    -->
+
+    <h1 class="title">Cloud: <span class="js-path"><a href="index">/</a></span></h1>  <table id="indexlist">
+   <tbody><tr class="indexhead"><th class="indexcolicon"><img src="lib/svg/blank.svg" alt="[ICO]"></th><th class="indexcolname"><a href="trash">Name</a></th><th class="indexcollastmod"><a href="trash">Last modified</a></th><th class="indexcolsize"><a href="trash">Size</a></th></tr>
+   <tr class="even"><td class="indexcolicon"><a href="trash/index.html" tabindex="-1"><img src="lib/svg/folder.svg" alt="[DIR]"></a></td><td class="indexcolname"><a href="trash">trash/</a></td><td class="indexcollastmod">2021-11-13 13:01  </td><td class="indexcolsize">  - </td></tr>
+</tbody></table>
+  </main>
+
+  <footer>
+    <!--
+      Add any other listing related copyright content here
+    -->
+
+<em>© 2021 Ducher|Nippbuy</em>
+  </footer>
+  
+  <script>
+    function joinUntil(array, index, separator) {
+      var result = [];
+
+      for (var i = 0; i <= index; i++) {
+        result.push(array[i]);
+      }
+
+      return result.join(separator);
+    }
+
+    // Make all the icon links unfocusable with tab
+    var iconLinks = document.querySelectorAll('.indexcolicon a');
+    Array.prototype.forEach.call(iconLinks, function(link) {
+      link.setAttribute('tabindex', '-1');
+    });
+
+    var path = document.querySelector('.js-path');
+    var pathParts = location.pathname.split('/');
+
+    // Removing empty strings
+    for (var i = 0; i < pathParts.length;) {
+      if (pathParts[i]) {
+        i++;
+      } else {
+        pathParts.splice(i, 1);
+      }
+    }
+
+    var pathContents = ['<a href="/">/</a>'];
+    Array.prototype.forEach.call(pathParts, function(part, index) {
+      pathContents.push('<a href="/' + joinUntil(pathParts, index, '/') + '">' + decodeURI(part) + '</a>');
+    });
+
+    path.innerHTML = pathContents.join('&rsaquo;');
+  </script>
+
+</body><div style="all:initial"></div></html>
