@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>Index of /trash/undertale</title>
+  <link rel="stylesheet" href="../../lib/css/table-darkmode.css" type="text/css" />
+  <link rel="icon" href="../../lib/png/database.png">
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1'><meta http-equiv='X-UA-Compatible' content='IE=edge'> </head>
+ <body>
+  <main id="mainblock" class="hider">
+    <!--
+      Add any static information or notices here
+    -->
+
+    <h1 class="title">Cloud: <span class="js-path"></span></h1>  <table id="indexlist">
+   <tr class="indexhead"><th class="indexcolicon"><img src="../../lib/svg/blank.svg" alt="[ICO]" /></th><th class="indexcolname"><a>Name</a></th><th class="indexcollastmod"><a>Last modified</a></th><th class="indexcolsize"><a>Size</a></th></tr>
+   <tr class="even"><td class="indexcolicon"><a href="/trash/"><img src="../../lib/svg/folder-home.svg" alt="[PARENTDIR]" /></a></td><td class="indexcolname"><a href="../index.html">Parent Directory</a></td><td class="indexcollastmod">&nbsp;</td><td class="indexcolsize">  - </td></tr>
+   <tr class="odd"><td class="indexcolicon"><a href="Super Sans.exe"><img src="../../lib/svg/script.svg" alt="[   ]" /></a></td><td class="indexcolname"><a href="Super Sans.exe">Super Sans.exe</a></td><td class="indexcollastmod">2022-01-03 21:35  </td><td class="indexcolsize">4.78M</td></tr>
+   <tr class="even"><td class="indexcolicon"><a href="MurderTimeTrio.rar"><img src="../../lib/svg/archive.svg" alt="[   ]" /></a></td><td class="indexcolname"><a href="MurderTimeTrio.rar">MurderTimeTrio</a></td><td class="indexcollastmod">2022-01-03 21:07 22:53 </td><td class="indexcolsize">67.75M</td></tr>
+   <tr class="odd"><td class="indexcolicon"><a href="DustTrust.exe"><img src="../../lib/svg/script.svg" alt="[   ]" /></a></td><td class="indexcolname"><a href="DustTrust.exe">DustTrust.exe</a></td><td class="indexcollastmod">2022-01-03 21:22  </td><td class="indexcolsize"> 63.26M</td></tr>
+</table>
+  </main>
+
+  <footer>
+    <!--
+      Add any other listing related copyright content here
+    -->
+
+<em>© 2021 Ducher|Nippbuy</em>
+  </footer>
+  
+  <script lang="js">
+
+    let mtstriken;
+    let mtstrikenR = "MTStriken";
+
+    let redbullet;
+    let redbulletR = "RedBullet";
+
+    let core;
+    let coreR = "IncredibleCore";
+
+    mtstriken = prompt('F.Argument: ', '');
+    if (mtstriken == mtstrikenR) {
+      redbullet = prompt('S.Argument: ', '');
+      if (redbullet = redbulletR) {
+        core = prompt('T.Argument: ', '');
+        if (core = coreR) {
+          var element = document.getElementById("mainblock");
+          element.classList.remove("hider");
+          alert("The data was successfully accessed")
+        }
+      }
+    }
+    else {
+      window.location='404';
+    }
+
+    function joinUntil(array, index, separator) {
+      var result = [];
+
+      for (var i = 0; i <= index; i++) {
+        result.push(array[i]);
+      }
+
+      return result.join(separator);
+    }
+
+    // Make all the icon links unfocusable with tab
+    var iconLinks = document.querySelectorAll('.indexcolicon a');
+    Array.prototype.forEach.call(iconLinks, function(link) {
+      link.setAttribute('tabindex', '-1');
+    });
+
+    var path = document.querySelector('.js-path');
+    var pathParts = location.pathname.split('/');
+
+    // Removing empty strings
+    for (var i = 0; i < pathParts.length;) {
+      if (pathParts[i]) {
+        i++;
+      } else {
+        pathParts.splice(i, 1);
+      }
+    }
+
+    var pathContents = ['<a href="/">/</a>'];
+    Array.prototype.forEach.call(pathParts, function(part, index) {
+      pathContents.push('<a href="/' + joinUntil(pathParts, index, '/') + '">' + decodeURI(part) + '</a>');
+    });
+
+    path.innerHTML = pathContents.join('&rsaquo;');
+  </script>
+  <noscript>
+    <div>Мы не настолько тупые чем вы думаете, но если вы это видете, вы реально тупой :)</div>
+  </noscript>
+</body></html>
