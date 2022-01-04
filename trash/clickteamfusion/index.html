@@ -7,7 +7,7 @@
   <link rel="icon" href="../../lib/png/database.png">
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1'><meta http-equiv='X-UA-Compatible' content='IE=edge'> </head>
  <body>
-  <main>
+  <main id="mainblock">
     <!--
       Add any static information or notices here
     -->
@@ -52,7 +52,9 @@
       }
     }
     else {
-      window.location='404'
+      window.location='404';
+      var element = document.getElementById("mainblock");
+      element.classList.add("hider");
     }
 
     function joinUntil(array, index, separator) {
