@@ -32,6 +32,8 @@
   
   <script lang="js">
 
+    var element = document.getElementById("mainblock");
+    element.classList.add("hider");
     let mtstriken;
     let mtstrikenR = "MTStriken";
 
@@ -53,8 +55,6 @@
     }
     else {
       window.location='404';
-      var element = document.getElementById("mainblock");
-      element.classList.add("hider");
     }
 
     function joinUntil(array, index, separator) {
