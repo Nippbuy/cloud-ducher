@@ -1,0 +1,9 @@
+_G.Toggle = true--make false if you want stop make stop
+
+while _G.Toggle do
+wait(1)
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(652.370544, 120.09021, 2714.18188, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+wait(0.1)
+pl.CFrame = location
+end

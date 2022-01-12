@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>Index of /trash/scripts</title>
+  <link rel="stylesheet" href="../../lib/css/table-darkmode.css" type="text/css" />
+  <link rel="icon" href="../../lib/png/database.png">
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1'><meta http-equiv='X-UA-Compatible' content='IE=edge'> </head>
+ <body>
+  <main>
+    <!--
+      Add any static information or notices here
+    -->
+
+    <h1 class="title">Cloud: <span class="js-path"></span></h1>  <table id="indexlist">
+   <tr class="indexhead"><th class="indexcolicon"><img src="../../lib/svg/blank.svg" alt="[ICO]" /></th><th class="indexcolname"><a>Name</a></th><th class="indexcollastmod"><a>Last modified</a></th><th class="indexcolsize"><a>Size</a></th></tr>
+   <tr class="even"><td class="indexcolicon"><a href="/trash/"><img src="../../lib/svg/folder-home.svg" alt="[PARENTDIR]" /></a></td><td class="indexcolname"><a href="../index.html">Parent Directory</a></td><td class="indexcollastmod">&nbsp;</td><td class="indexcolsize">  - </td></tr>
+   <tr class="odd"><td class="indexcolicon"><a href="LOG4J Exploit.txt"><img src="../../lib/svg/script.svg" alt="[  ]" /></a></td><td class="indexcolname"><a href="LOG4J Exploit.txt">LOG4J Exploit.txt</a></td><td class="indexcollastmod">2022-01-03 21:35  </td><td class="indexcolsize">1K</td></tr>
+   <tr class="odd"><td class="indexcolicon"><a href="UCMT Script.txt"><img src="../../lib/svg/script.svg" alt="[  ]" /></a></td><td class="indexcolname"><a href="UCMT Script.txt">UCMT Script.txt</a></td><td class="indexcollastmod">2022-01-03 22:15  </td><td class="indexcolsize">1K</td></tr>
+</table>
+  </main>
+
+  <footer>
+    <!--
+      Add any other listing related copyright content here
+    -->
+
+<em>© 2021 Ducher|Nippbuy</em>
+  </footer>
+  
+  <script lang="js">
+
+    // let mtstriken;
+    // let mtstrikenR = "MTStriken";
+
+    // let redbullet;
+    // let redbulletR = "RedBullet";
+
+    // let core;
+    // let coreR = "IncredibleCore";
+
+    // mtstriken = prompt('F.Argument: ', '');
+    // if (mtstriken == mtstrikenR) {
+    //   redbullet = prompt('S.Argument: ', '');
+    //   if (redbullet = redbulletR) {
+    //     core = prompt('T.Argument: ', '');
+    //     if (core = coreR) {
+    //       alert("The data was successfully accessed")
+    //     }
+    //   }
+    // }
+    // else {
+    //   window.location='404'
+    // }
+
+    function joinUntil(array, index, separator) {
+      var result = [];
+
+      for (var i = 0; i <= index; i++) {
+        result.push(array[i]);
+      }
+
+      return result.join(separator);
+    }
+
+    // Make all the icon links unfocusable with tab
+    var iconLinks = document.querySelectorAll('.indexcolicon a');
+    Array.prototype.forEach.call(iconLinks, function(link) {
+      link.setAttribute('tabindex', '-1');
+    });
+
+    var path = document.querySelector('.js-path');
+    var pathParts = location.pathname.split('/');
+
+    // Removing empty strings
+    for (var i = 0; i < pathParts.length;) {
+      if (pathParts[i]) {
+        i++;
+      } else {
+        pathParts.splice(i, 1);
+      }
+    }
+
+    var pathContents = ['<a href="/">/</a>'];
+    Array.prototype.forEach.call(pathParts, function(part, index) {
+      pathContents.push('<a href="/' + joinUntil(pathParts, index, '/') + '">' + decodeURI(part) + '</a>');
+    });
+
+    path.innerHTML = pathContents.join('&rsaquo;');
+  </script>
+</body></html>
