@@ -1,4 +1,4 @@
-_G.Toggle = true--make false if you want stop make stop
+_G.Toggle = true - make false if you want stop make stop
 
 while _G.Toggle do
 wait(1)
