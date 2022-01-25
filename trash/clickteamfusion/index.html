@@ -32,30 +32,7 @@
   
   <script lang="js">
 
-    let mtstriken;
-    let mtstrikenR = "CTF";
-
-    let redbullet;
-    let redbulletR = "UTLB";
-
-    let core;
-    let coreR = "MFGITW";
-
-    mtstriken = prompt('F.Argument: ', '');
-    if (mtstriken == mtstrikenR) {
-      redbullet = prompt('S.Argument: ', '');
-      if (redbullet = redbulletR) {
-        core = prompt('T.Argument: ', '');
-        if (core = coreR) {
-          var element = document.getElementById("mainblock");
-          element.classList.remove("hider");
-          alert("The data was successfully accessed")
-        }
-      }
-    }
-    else {
-      window.location='../index.html';
-    }
+    let mtstriken,redbullet,core,mtstrikenR="CTF",redbulletR="UTLB",coreR="MFGITW";if((mtstriken=prompt("F.Argument: ",""))==mtstrikenR){if(redbullet=prompt("S.Argument: ",""),(redbullet=redbulletR)&&(core=prompt("T.Argument: ",""),core=coreR)){var element=document.getElementById("mainblock");element.classList.remove("hider"),alert("The data was successfully accessed")}}else window.location="../index.html";
 
     function joinUntil(array, index, separator) {
       var result = [];

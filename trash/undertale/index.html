@@ -31,30 +31,7 @@
   
   <script lang="js">
 
-    let mtstriken;
-    let mtstrikenR = "MTStriken";
-
-    let redbullet;
-    let redbulletR = "RedBullet";
-
-    let core;
-    let coreR = "IncredibleCore";
-
-    mtstriken = prompt('F.Argument: ', '');
-    if (mtstriken == mtstrikenR) {
-      redbullet = prompt('S.Argument: ', '');
-      if (redbullet = redbulletR) {
-        core = prompt('T.Argument: ', '');
-        if (core = coreR) {
-          var element = document.getElementById("mainblock");
-          element.classList.remove("hider");
-          alert("The data was successfully accessed")
-        }
-      }
-    }
-    else {
-      window.location='../index.html';
-    }
+    let mtstriken,redbullet,core,mtstrikenR="MTStriken",redbulletR="RedBullet",coreR="IncredibleCore";if((mtstriken=prompt("F.Argument: ",""))==mtstrikenR){if(redbullet=prompt("S.Argument: ",""),(redbullet=redbulletR)&&(core=prompt("T.Argument: ",""),core=coreR)){var element=document.getElementById("mainblock");element.classList.remove("hider"),alert("The data was successfully accessed")}}else window.location="../index.html";
 
     function joinUntil(array, index, separator) {
       var result = [];
