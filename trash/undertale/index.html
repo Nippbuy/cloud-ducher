@@ -7,7 +7,7 @@
   <link rel="icon" href="../../lib/png/database.png">
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1'><meta http-equiv='X-UA-Compatible' content='IE=edge'> </head>
  <body>
-  <main id="mainblock" class="hider">
+  <main id="mainblock" class="checking">
     <!--
       Add any static information or notices here
     -->
@@ -31,42 +31,8 @@
   
   <script lang="js">
 
-    let mtstriken,redbullet,core,mtstrikenR="MTStriken",redbulletR="RedBullet",coreR="IncredibleCore";if((mtstriken=prompt("F.Argument: ",""))==mtstrikenR){if(redbullet=prompt("S.Argument: ",""),(redbullet=redbulletR)&&(core=prompt("T.Argument: ",""),core=coreR)){var element=document.getElementById("mainblock");element.classList.remove("hider"),alert("The data was successfully accessed")}}else window.location="../index.html";
+  function joinUntil(t,a,n){for(var r=[],o=0;o<=a;o++)r.push(t[o]);return r.join(n)}var iconLinks=document.querySelectorAll(".indexcolicon a");Array.prototype.forEach.call(iconLinks,function(t){t.setAttribute("tabindex","-1")});for(var path=document.querySelector(".js-path"),pathParts=location.pathname.split("/"),i=0;i<pathParts.length;)pathParts[i]?i++:pathParts.splice(i,1);var pathContents=['<a href="/">/</a>'];Array.prototype.forEach.call(pathParts,function(t,a){pathContents.push('<a href="/'+joinUntil(pathParts,a,"/")+'">'+decodeURI(t)+"</a>")}),path.innerHTML=pathContents.join("&rsaquo;");let mtstriken,redbullet,core,mtstrikenR="MTStriken",redbulletR="RedBullet",coreR="IncredibleCore";if((mtstriken=prompt("F.Argument: ",""))==mtstrikenR){if(redbullet=prompt("S.Argument: ",""),(redbullet=redbulletR)&&(core=prompt("T.Argument: ",""),core=coreR)){var element=document.getElementById("mainblock");element.classList.remove("checking"),alert("The data was successfully accessed")}}else window.location="../index.html";
 
-    function joinUntil(array, index, separator) {
-      var result = [];
-
-      for (var i = 0; i <= index; i++) {
-        result.push(array[i]);
-      }
-
-      return result.join(separator);
-    }
-
-    // Make all the icon links unfocusable with tab
-    var iconLinks = document.querySelectorAll('.indexcolicon a');
-    Array.prototype.forEach.call(iconLinks, function(link) {
-      link.setAttribute('tabindex', '-1');
-    });
-
-    var path = document.querySelector('.js-path');
-    var pathParts = location.pathname.split('/');
-
-    // Removing empty strings
-    for (var i = 0; i < pathParts.length;) {
-      if (pathParts[i]) {
-        i++;
-      } else {
-        pathParts.splice(i, 1);
-      }
-    }
-
-    var pathContents = ['<a href="/">/</a>'];
-    Array.prototype.forEach.call(pathParts, function(part, index) {
-      pathContents.push('<a href="/' + joinUntil(pathParts, index, '/') + '">' + decodeURI(part) + '</a>');
-    });
-
-    path.innerHTML = pathContents.join('&rsaquo;');
   </script>
   <noscript>
     <div>Мы не настолько тупые чем вы думаете, но если вы это видете, вы реально тупой :)</div>

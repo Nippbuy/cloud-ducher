@@ -1,15 +1,1 @@
-body {
-    background-color: #212121;
-    border-top: 0.5rem solid #424242;
-    border-bottom: 0.5rem solid #424242;
-    color: #eeeeee;
-  }
-  
-  table tr:hover {
-    background-color: #424242;
-  }
-  
-  a {
-    color: #82b1ff;
-  }
-  
+body{background-color:#212121;border-top:.5rem solid #424242;border-bottom:.5rem solid #424242;color:#eee}table tr:hover{background-color:#424242}a{color:#82b1ff}

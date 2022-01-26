@@ -1,14 +1,1 @@
-@import 'table.css';
-@import 'darkmode.css';
-
-table tr {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-table tr.indexhead {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.hider {
-  display: none;
-}
+@import url(table.css);@import url(darkmode.css);table tr{border-bottom:1px solid rgba(255,255,255,.2)}table tr.indexhead{border-bottom:1px solid rgba(255,255,255,.3)}.checking{display:none}
